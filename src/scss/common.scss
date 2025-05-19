@@ -1,0 +1,62 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.h1 {
+  font-family: $fontFamilySecond;
+  font-weight: 700;
+  font-size: rem(32);
+  line-height: math.div(40, 32);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $white;
+
+  @media (max-width: $tablet2) {
+    font-size: rem(22);
+    line-height: math.div(29, 22);
+    letter-spacing: 0;
+  }
+}
+
+.h2 {
+  font-family: $fontFamilySecond;
+  font-weight: 700;
+  font-size: rem(32);
+  line-height: math.div(40, 32);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $white;
+
+  @media (max-width: $tablet2) {
+    font-size: rem(22);
+    line-height: math.div(29, 22);
+    letter-spacing: 0;
+  }
+}
+
+.accent-text {
+  color: $accent;
+}
+
+[data-tippy-body] {
+  display: none;
+}
+
+.tippy-box {
+  border: 1px solid $bg_dark_4;
+  border-radius: 15px !important;
+  backdrop-filter: blur(34px);
+  background: rgba($bg_dark_6, 0.6) !important;
+}
+
+.tippy-content {
+  padding: rem(14) rem(29) !important;
+
+  @media (max-width: $mobileSmall) {
+    padding-left: rem(19) !important;
+    padding-right: rem(19) !important;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

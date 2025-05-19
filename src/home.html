@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+            <!-- first-screen -->
+            @@include('_first-screen.html',{})
+            <!-- first-screen end -->
+
+            <!-- advantages -->
+            @@include('_advantages.html',{})
+            <!-- advantages end -->
+
+            <!-- products-list -->
+            @@include('_products-list.html',{})
+            <!-- products-list end -->
+
+            <!-- products-list -->
+            @@include('_products-list_categories.html',{})
+            <!-- products-list end -->
+
+            <!-- production -->
+            @@include('_production.html',{})
+            <!-- production end -->
+
+            <!-- reviews -->
+            @@include('_reviews.html',{})
+            <!-- reviews end -->
+
+            <!-- callback -->
+            @@include('_callback.html',{})
+            <!-- callback end -->
+
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+.advantages {
+  margin-bottom: rem(120);
+
+  @media (max-width: $tablet2) {
+    margin-bottom: rem(88);
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: rem(81);
+  }
+
+  @media (max-width: $mobileSmall) {
+    margin-bottom: rem(52);
+  }
+  // .advantages__container
+  &__container {
+  }
+  // .advantages__title
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: rem(40);
+
+      @media (max-width: $tablet2) {
+        margin-bottom: rem(32);
+      }
+    }
+  }
+  // .advantages__grid
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr calc(663 / 1170 * 100%);
+    grid-gap: rem(37);
+
+    @media (max-width: $tablet2) {
+      grid-template-columns: 1fr;
+      grid-row-gap: rem(50);
+    }
+
+    @media (max-width: $mobile) {
+      grid-row-gap: rem(68);
+    }
+
+    @media (max-width: $mobileSmall) {
+      grid-row-gap: rem(97);
+    }
+  }
+  // .advantages__list
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: rem(30);
+
+    @media (max-width: $tablet2) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: rem(12);
+      grid-row-gap: rem(16);
+    }
+
+    @media (max-width: $mobile) {
+      grid-template-columns: 1fr;
+      grid-row-gap: rem(14);
+    }
+  }
+  // .advantages__list-item
+  &__list-item {
+    padding: rem(19) rem(39);
+    border: rem(1) solid $bg_dark_4;
+    border-radius: rem(15);
+    background-color: $bg_dark;
+
+    @media (max-width: $tablet2) {
+      padding: rem(20) rem(15) rem(18);
+    }
+  }
+  // .advantages__list-item-title
+  &__list-item-title {
+    font-family: $fontFamilySecond;
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: math.div(25, 20);
+    letter-spacing: 0.05em;
+
+    @media (max-width: $tablet2) {
+      line-height: math.div(24, 20);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+  // .advantages__list-item-descr
+  &__list-item-descr {
+    font-size: rem(14);
+    line-height: math.div(17, 14);
+
+    @media (max-width: $tablet2) {
+      font-size: rem(16);
+      line-height: math.div(23, 16);
+    }
+  }
+  // .advantages__house
+  &__house {
+    position: relative;
+    align-self: start;
+
+    @media (max-width: $tablet2) {
+      max-width: rem(662);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: rem(55);
+      bottom: rem(20);
+      rotate: -17deg;
+      width: rem(582);
+      height: rem(289);
+      border-radius: 100%;
+      filter: blur(74px);
+      background-color: rgba($color: $black, $alpha: 0.4);
+    }
+  }
+  // .advantages__house-img
+  &__house-img {
+    position: relative;
+  }
+  // .advantages__house-dots
+  &__house-dots {
+  }
+  // .advantages__house-dot
+  &__house-dot {
+    position: absolute;
+    width: rem(24);
+    height: rem(24);
+    border-radius: 100%;
+    box-shadow:
+      0 1px 1px 0 rgba($color: $black, $alpha: 0.45),
+      0 3px 5px 0 rgba($color: $black, $alpha: 0.45);
+    background-image: url(../img/advantages/dot.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+
+    @media (max-width: $mobile) {
+      width: rem(16);
+      height: rem(16);
+    }
+
+    @media (max-width: $mobileSmall) {
+      width: rem(12);
+      height: rem(12);
+    }
+
+    &:hover {
+      background-image: url(../img/advantages/dot_hover.svg);
+    }
+
+    &_1 {
+      top: 21.5%;
+      left: 29.8%;
+
+      @media (max-width: $tablet2) {
+        top: 21.5%;
+        left: 38.2%;
+      }
+
+      @media (max-width: $mobile) {
+        top: 22%;
+        left: 29.3%;
+      }
+    }
+
+    &_2 {
+      top: 24.9%;
+      left: 66%;
+
+      @media (max-width: $tablet2) {
+        top: 24.9%;
+        left: 68.5%;
+      }
+
+      @media (max-width: $mobile) {
+        top: 25.4%;
+        left: 64.7%;
+      }
+    }
+
+    &_3 {
+      top: 16.1%;
+      left: 75.7%;
+
+      @media (max-width: $tablet2) {
+        top: 16%;
+        left: 77.4%;
+      }
+
+      @media (max-width: $mobile) {
+        top: 16.7%;
+        left: 74.2%;
+      }
+    }
+
+    &_4 {
+      top: 66.3%;
+      left: 39.3%;
+
+      @media (max-width: $tablet2) {
+        top: 66.3%;
+        left: 46.2%;
+      }
+
+      @media (max-width: $mobile) {
+        top: 66.3%;
+        left: 38.6%;
+      }
+    }
+
+    &_5 {
+      top: 59.4%;
+      left: 71.6%;
+
+      @media (max-width: $tablet2) {
+        top: 59.4%;
+        left: 73.8%;
+      }
+
+      @media (max-width: $mobile) {
+        top: 59.4%;
+        left: 70.2%;
+      }
+    }
+
+    &_6 {
+      top: 90.5%;
+      left: 42.9%;
+
+      @media (max-width: $tablet2) {
+        top: 90.4%;
+        left: 49%;
+      }
+
+      @media (max-width: $mobile) {
+        top: 90%;
+        left: 42%;
+      }
+    }
+
+    &_7 {
+      top: 76.3%;
+      left: 65.4%;
+
+      @media (max-width: $tablet2) {
+        top: 76.1%;
+        left: 67.8%;
+      }
+
+      @media (max-width: $mobile) {
+        top: 76%;
+        left: 64%;
+      }
+    }
+  }
+  // .advantages__house-dot-body
+  &__house-dot-body {
+  }
+  // .advantages__house-dot-title-wrapper
+  &__house-dot-title-wrapper {
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+  // .advantages__house-dot-title
+  &__house-dot-title {
+    font-family: $fontFamilySecond;
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: math.div(25, 20);
+    letter-spacing: 0.05em;
+
+    @media (max-width: $tablet2) {
+      font-size: rem(18);
+      line-height: math.div(22, 18);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(5);
+    }
+  }
+  // .advantages__house-dot-descr
+  &__house-dot-descr {
+    font-size: rem(14);
+    line-height: math.div(17, 14);
+  }
+  // .advantages__house-dot-link
+  &__house-dot-link {
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: math.div(17, 14);
+    text-transform: uppercase;
+    text-decoration: underline !important;
+    color: $accent;
+    pointer-events: all;
+
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+}

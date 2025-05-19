@@ -1,0 +1,9 @@
+phpmailer/
+package-lock.json
+flsStartTemplate/
+node_modules/
+Source/
+version.json
+undefined
+**/*.zip
+**/*.rar
