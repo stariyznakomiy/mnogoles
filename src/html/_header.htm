@@ -2,13 +2,13 @@
     <div class="header__container">
         <div class="header__body">
             <div class="header__top">
-                <nav class="header__menu">
-                    <ul class="header__menu-list">
-                        <li class="header__menu-item"><a href="#" class="header__menu-link">О нас</a></li>
-                        <li class="header__menu-item"><a href="#" class="header__menu-link">Доставка и оплата</a></li>
-                        <li class="header__menu-item"><a href="#" class="header__menu-link active">Контакты</a></li>
-                        <li class="header__menu-item"><a href="#" class="header__menu-link">Полезные статьи</a></li>
-                        <li class="header__menu-item"><a href="#" class="header__menu-link">Калькулятор пиломатериалов</a></li>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">О нас</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Доставка и оплата</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link active">Контакты</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Полезные статьи</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Калькулятор пиломатериалов</a></li>
                     </ul>
                 </nav>
                 </nav>
@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="header__grid">
-                <div class="header__burger-menu">
+                <div class="header__burger-menu icon-menu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -34,18 +34,37 @@
                         <button type="submit" class="header-search__form-submit">Найти</button>
                     </form>
                     <div class="header-search__body">
-                        <ul class="header-search__list">
-                            <li class="header-search__item">
-                                <div href="#" class="header-search__card">
-                                    <div class="header-search__card-img-wrapper">
-                                        <img class="header-search__card-img" data-src="img/header-search/header-search-link-image.png"
-                                            data-srcset="img/header-search/header-search-link-image@2x.png 2x" alt="">
-                                    </div>
-                                    <a href="#" class="header-search__link">Доска обрезная, хвоя, ГОСТ, 1 сорт, 25-100-6000 мм</a>
+                        <div class="header-search__list">
+                            <div href="#" class="header-search__card">
+                                <div class="header-search__card-img-wrapper">
+                                    <img class="header-search__card-img" data-src="img/header-search/header-search-link-image.png"
+                                        data-srcset="img/header-search/header-search-link-image@2x.png 2x" alt="">
                                 </div>
-                            </li>
-                        </ul>
-                        <a href="#" class="header-search__more btn btn_small">Посмотреть результаты</a>
+                                <a href="#" class="header-search__link">Доска обрезная, хвоя, ГОСТ, 1 сорт, 25-100-6000 мм</a>
+                            </div>
+                            <div href="#" class="header-search__card">
+                                <div class="header-search__card-img-wrapper">
+                                    <img class="header-search__card-img" data-src="img/header-search/header-search-link-image.png"
+                                        data-srcset="img/header-search/header-search-link-image@2x.png 2x" alt="">
+                                </div>
+                                <a href="#" class="header-search__link">Доска обрезная, хвоя, ГОСТ, 1 сорт, 25-100-6000 мм</a>
+                            </div>
+                            <div href="#" class="header-search__card">
+                                <div class="header-search__card-img-wrapper">
+                                    <img class="header-search__card-img" data-src="img/header-search/header-search-link-image.png"
+                                        data-srcset="img/header-search/header-search-link-image@2x.png 2x" alt="">
+                                </div>
+                                <a href="#" class="header-search__link">Доска обрезная, хвоя, ГОСТ, 1 сорт, 25-100-6000 мм</a>
+                            </div>
+                            <div href="#" class="header-search__card">
+                                <div class="header-search__card-img-wrapper">
+                                    <img class="header-search__card-img" data-src="img/header-search/header-search-link-image.png"
+                                        data-srcset="img/header-search/header-search-link-image@2x.png 2x" alt="">
+                                </div>
+                                <a href="#" class="header-search__link">Доска обрезная, хвоя, ГОСТ, 1 сорт, 25-100-6000 мм</a>
+                            </div>
+                        </div>
+                        <a href="#" class="header-search__more btn btn_small">Посмотреть результаты <span>↗</span></a>
                     </div>
                 </div>
                 <div class=" header__action-wrapper header__action-wrapper_price">
@@ -57,6 +76,89 @@
                 </div>
                 <div class="header__action-wrapper header__action-wrapper_login">
                     <button type="button" class="header__action"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__menu menu">
+        <div class="menu__head">
+            <button type="button" class="menu__close icon-menu"></button>
+            <div class="menu__head-row" data-js="menu-search-row">
+                <button type="button" class="menu__price"><span>Опт. прайс</span></button>
+                <button type="button" class="menu__search-icon" data-js="menu-search-icon"></button>
+                <div class="menu__search-wrapper">
+                    <div class="menu__search header-search">
+                        <form action="" class="header-search__form">
+                            <input autocomplete="off" type="text" name="form[]" data-error="" placeholder="Поиск" class="header-search__form-input">
+                            <button type="submit" class="header-search__form-submit">Найти</button>
+                        </form>
+                    </div>
+                    <button type="button" class="menu__search-close" data-js="menu-search-icon"></button>
+                </div>
+            </div>
+        </div>
+        <div class="menu__body">
+            <div class="menu__list-wrapper">
+                <div class="menu__list-title">Каталог</div>
+                <div class="menu__list" data-spollers data-one-spoller>
+                    <div class="menu__item">
+                        <button data-spoller class="menu__item-title">Брус</button>
+                        <div class="menu__item-body">
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <button data-spoller class="menu__item-title">Доска</button>
+                        <div class="menu__item-body">
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <button data-spoller class="menu__item-title">Брус</button>
+                        <div class="menu__item-body">
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <button data-spoller class="menu__item-title">Доска</button>
+                        <div class="menu__item-body">
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <button data-spoller class="menu__item-title">Брус</button>
+                        <div class="menu__item-body">
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                            <div class="menu__item-sub"><a href="#" class="menu__item-sub-link">Пункт</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__bottom">
+                <ul class="menu__nav">
+                    <li class="menu__nav-item"><a href="#" class="menu__nav-link">Главная</a></li>
+                    <li class="menu__nav-item"><a href="#" class="menu__nav-link">О нас</a></li>
+                    <li class="menu__nav-item"><a href="#" class="menu__nav-link">Доставка и оплата</a></li>
+                    <li class="menu__nav-item"><a href="#" class="menu__nav-link">Контакты</a></li>
+                    <li class="menu__nav-item"><a href="#" class="menu__nav-link">Полезные статьи</a></li>
+                </ul>
+                <div class="menu__contacts">
+                    <div class="menu__contacts-address">г. Москва</div>
+                    <a href="tel:+79014179616" class="menu__contacts-phone">+7 901 417-96-16</a>
                 </div>
             </div>
         </div>

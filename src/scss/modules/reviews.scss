@@ -190,6 +190,7 @@
   }
   // .reviews__thumbs
   &__thumbs {
+    width: rem(360);
     min-width: 0;
   }
   // .reviews__thumbs-list
@@ -197,6 +198,11 @@
   }
   // .reviews__thumbs-slide
   &__thumbs-slide {
+    &.swiper-slide-thumb-active {
+      .reviews__thumbs-slide-img-wrapper {
+        border-color: $accent;
+      }
+    }
   }
   // .reviews__thumbs-slide-img-wrapper
   &__thumbs-slide-img-wrapper {

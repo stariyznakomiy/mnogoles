@@ -3,19 +3,13 @@ import { isMobile } from "./functions.js";
 // Подключение списка активных модулей
 import { flsModules } from "./modules.js";
 
-// document.addEventListener("click", documentActionsClick);
+document.addEventListener("click", documentActionsClick);
 
-// function documentActionsClick(e) {
-//    const el = e.target;
+function documentActionsClick(e) {
+   const el = e.target;
 
-//    if (el.closest('[data-js-slide="reviews-slide"]')) {
-//       const item = el.closest('[data-js-slide="reviews-slide"]');
-//       const activeItem = document.querySelector('[data-js-slide="reviews-slide"].active');
-
-//       if (activeItem) {
-//          activeItem.classList.remove('active');
-//       }
-
-//       item.classList.add('active');
-//    }
-// }
+   if (el.closest('[data-js="menu-search-icon"]')) {
+      const wrapper = el.closest('[data-js="menu-search-row"]');
+      wrapper.classList.toggle('active');
+   }
+}
