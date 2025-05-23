@@ -1,0 +1,30 @@
+.map {
+  // .map__body
+  &__body {
+    width: 100%;
+    height: rem(361);
+
+    @media (max-width: $mobileSmall) {
+      height: rem(263);
+    }
+  }
+  // .map__balloon
+  &__balloon {
+    position: absolute;
+    width: rem(200);
+    margin-left: rem(20);
+    margin-top: rem(-60);
+    padding: rem(10);
+    box-shadow: 0 5px 11px 0 rgba($black, 0.35);
+    background: $accent_light_2;
+    border-radius: rem(8);
+    font-size: rem(14);
+    line-height: math.div(17, 14);
+    text-align: center;
+  }
+}
+
+/* Убираем стандартный хвостик */
+.ymaps-balloon__tail {
+  display: none !important;
+}

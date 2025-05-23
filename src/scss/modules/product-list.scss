@@ -172,6 +172,14 @@
   border: rem(1) solid $bg_dark_4;
   border-radius: rem(30);
   background: $main_bg;
+
+  &_disable {
+    .product-card__head-label {
+      &::before {
+        background: $error_gradient;
+      }
+    }
+  }
   // .product-card__head
   &__head {
     position: relative;
@@ -220,6 +228,7 @@
       background: $accent_gradient_2;
     }
   }
+
   // .product-card__head-favorite
   &__head-favorite {
     position: relative;

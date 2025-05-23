@@ -12,6 +12,75 @@
     padding-top: rem(32);
     padding-bottom: rem(83);
   }
+  // .callback_alt
+  &_alt {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+    background: transparent;
+
+    @media (max-width: $tablet2) {
+      padding-top: rem(80);
+      padding-bottom: rem(40);
+    }
+
+    @media (max-width: $mobile) {
+      padding-top: rem(72);
+      padding-bottom: rem(111);
+    }
+
+    @media (max-width: $mobileSmall) {
+      padding-bottom: rem(61);
+    }
+
+    .callback__grid {
+      @media (max-width: $mobile) {
+        gap: rem(30);
+      }
+
+      @media (max-width: $mobileSmall) {
+        gap: rem(29);
+      }
+
+      &:not(:last-child) {
+        margin-bottom: rem(30);
+
+        @media (max-width: $tablet2) {
+          margin-bottom: rem(32);
+        }
+
+        @media (max-width: $mobile) {
+          margin-bottom: rem(30);
+        }
+      }
+    }
+
+    .callback__title-wrapper {
+      align-self: center;
+    }
+
+    .callback__title {
+      color: $white;
+    }
+
+    .callback__contacts {
+      @media (max-width: $mobileSmall) {
+        border-radius: rem(25);
+      }
+    }
+
+    .callback__form-btn {
+      background-color: $accent;
+
+      &:hover {
+        background-color: $bg_dark_3;
+      }
+    }
+
+    .callback__form-policy {
+      line-height: math.div(14, 12);
+      letter-spacing: 0.05em;
+    }
+  }
   // .callback__container
   &__container {
   }

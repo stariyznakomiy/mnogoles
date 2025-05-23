@@ -1,0 +1,190 @@
+.delpay {
+  margin-bottom: rem(120);
+
+  @media (max-width: $tablet2) {
+    margin-bottom: rem(40);
+  }
+  // .delpay__container
+  &__container {
+  }
+  // .delpay__title
+  &__title {
+    line-height: math.div(42, 32);
+    letter-spacing: normal;
+
+    @media (max-width: $tablet2) {
+      line-height: math.div(29, 22);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(40);
+
+      @media (max-width: $tablet2) {
+        margin-bottom: rem(32);
+      }
+    }
+  }
+  // .delpay__grid
+  &__grid {
+  }
+  // .delpay__group
+  &__group {
+    display: grid;
+    grid-template-columns: 1fr rem(121) repeat(2, 1fr);
+    grid-column-gap: rem(30);
+
+    @media (max-width: $tablet2) {
+      grid-template-columns: 1fr;
+    }
+
+    // .delpay__group_delivery
+    &_delivery {
+      .delpay__subtitle-wrapper {
+        max-width: rem(446);
+      }
+
+      .delpay__list {
+        grid-column: span 4;
+        grid-template-columns: 1fr rem(121) repeat(2, 1fr);
+
+        @media (max-width: $tablet2) {
+          grid-column: unset;
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: $mobile) {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .delpay__item {
+        @media (max-width: $tablet2) {
+          min-height: rem(200);
+        }
+
+        &:first-child {
+          grid-column: span 2;
+
+          @media (max-width: $mobile) {
+            grid-column: unset;
+          }
+        }
+      }
+    }
+
+    // .delpay__group_payment
+    &_payment {
+      .delpay__list {
+        grid-column: span 2;
+        grid-template-columns: 1fr;
+
+        @media (max-width: $tablet2) {
+          grid-column: unset;
+        }
+      }
+
+      .delpay__item {
+        @media (max-width: $mobileSmall) {
+          min-height: rem(152);
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(72);
+
+      @media (max-width: $tablet2) {
+        margin-bottom: rem(32);
+      }
+    }
+  }
+  // .delpay__subtitle-wrapper
+  &__subtitle-wrapper {
+    grid-column: 2 span;
+
+    @media (max-width: $tablet2) {
+      grid-column: unset;
+      min-height: rem(83);
+      max-width: rem(471);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(31);
+
+      @media (max-width: $tablet2) {
+        margin-bottom: rem(24);
+      }
+    }
+  }
+  // .delpay__subtitle
+  &__subtitle {
+    font-family: $fontFamilySecond;
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: math.div(25, 20);
+    letter-spacing: 0.05em;
+
+    @media (max-width: $tablet2) {
+      font-size: rem(17);
+      line-height: math.div(21, 17);
+      letter-spacing: 0.02em;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(13);
+
+      @media (max-width: $tablet2) {
+        margin-bottom: rem(11);
+      }
+    }
+  }
+  // .delpay__text
+  &__text {
+    font-size: rem(15);
+    line-height: math.div(21, 15);
+  }
+  // .delpay__list
+  &__list {
+    display: grid;
+    grid-gap: rem(30);
+
+    @media (max-width: $tablet2) {
+      grid-gap: rem(16);
+    }
+
+    @media (max-width: $mobile) {
+      grid-gap: rem(12);
+    }
+  }
+  // .delpay__item
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: rem(36);
+    padding: rem(19);
+    border: rem(1) solid $bg_dark_4;
+    border-radius: rem(28);
+    box-shadow: 0 5px 11px 0 rgba($black, 0.35);
+    background: $bg_dark;
+
+    @media (max-width: $mobile) {
+      border-radius: rem(25);
+    }
+
+    @media (max-width: $mobileSmall) {
+      gap: rem(12);
+    }
+  }
+  // .delpay__item-icon
+  &__item-icon {
+    width: rem(52);
+    height: rem(52);
+  }
+  // .delpay__item-text
+  &__item-text {
+    font-weight: 600;
+    font-size: rem(17);
+    line-height: math.div(24, 17);
+  }
+}

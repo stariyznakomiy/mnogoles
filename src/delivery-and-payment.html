@@ -9,9 +9,13 @@
         @@include('html/_header.htm',{})
         <main class="page">
 
-            <!-- delivery and payment -->
-            <section class="delpay"></section>
-            <!-- delivery and payment end -->
+            <!-- delpay -->
+            @@include('_delpay.html',{})
+            <!-- delpay end -->
+
+            <!-- callback -->
+            @@include('_callback.html',{})
+            <!-- callback end -->
 
         </main>
         @@include('html/_footer.htm',{})

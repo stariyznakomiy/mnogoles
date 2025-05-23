@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Каталог"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+            <!-- catalog -->
+            <section class="catalog">
+                <div class="catalog__container">
+                    <div class="catalog__breadcrumbs breadcrumbs">
+                        <a href="#" class="breadcrumbs__back">←</a>
+                        <div class="breadcrumbs__list">
+                            <a href="/" class="breadcrumbs__link">Главная</a>
+                            <span>/</span>
+                            <span class="breadcrumbs__key">Каталог</span>
+                        </div>
+                    </div>
+                    <div class="catalog__grid">
+                        <div class="catalog__sidebar sidebar" data-js="sidebar">
+                            <div class="sidebar__close-wrapper">
+                                <button type="button" class="sidebar__close" data-js="sidebar-close"></button>
+                            </div>
+                            @@include('html/_sidebar__list-wrapper_catalog.html',{})
+                        </div>
+                        <div class="catalog__main">
+                            <div class="catalog__group">
+                                <h1 class="catalog__title h1">Доски</h1>
+                                <div class="catalog__actions">
+                                    <button type="button" class="catalog__actions-btn catalog__actions-btn_catalog" data-js="sidebar-catalog">Каталог</button>
+                                </div>
+                                <div class="catalog__list">
+                                    @@include('html/_category-card.htm',{"class":"catalog__list-item catalog__list-item_category"})
+                                    @@include('html/_category-card.htm',{"class":"catalog__list-item catalog__list-item_category"})
+                                    @@include('html/_category-card.htm',{"class":"catalog__list-item catalog__list-item_category"})
+                                    @@include('html/_category-card.htm',{"class":"catalog__list-item catalog__list-item_category"})
+                                    @@include('html/_category-card.htm',{"class":"catalog__list-item catalog__list-item_category"})
+                                    @@include('html/_category-card.htm',{"class":"catalog__list-item catalog__list-item_category"})
+                                </div>
+                            </div>
+                            <div class="catalog__group">
+                                <h1 class="catalog__title h1">Бруски</h1>
+                                <div class="catalog__list">
+                                    @@include('html/_category-card.htm',{"class":"catalog__list-item catalog__list-item_category"})
+                                    @@include('html/_category-card.htm',{"class":"catalog__list-item catalog__list-item_category"})
+                                    @@include('html/_category-card.htm',{"class":"catalog__list-item catalog__list-item_category"})
+                                    @@include('html/_category-card.htm',{"class":"catalog__list-item catalog__list-item_category"})
+                                    @@include('html/_category-card.htm',{"class":"catalog__list-item catalog__list-item_category"})
+                                    @@include('html/_category-card.htm',{"class":"catalog__list-item catalog__list-item_category"})
+                                </div>
+                                <button type="button" class="catalog__more-btn btn btn_small">Загрузить еще <span>↓</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- catalog end -->
+
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

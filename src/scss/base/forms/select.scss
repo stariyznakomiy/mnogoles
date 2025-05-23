@@ -129,6 +129,8 @@
 	cursor: pointer;
 }
 
+//========================================================================================================================================================
+
 .select_country {
 	position: absolute;
 	top: 50%;
@@ -189,5 +191,75 @@
 		padding: 0;
 		border-radius: rem(4);
 		overflow: hidden;
+	}
+}
+
+//========================================================================================================================================================
+
+.select_filter {
+	flex: 1 1 auto;
+
+	.select__title {
+		border: none;
+		border-radius: rem(30);
+		background-color: $gray_14;
+
+		&:hover {
+			.select__value {
+				color: $white;
+				&::after {
+					background-image: url(../img/icons/icon_down_white.svg);
+				}
+			}
+		}
+	}
+
+	.select__value {
+		height: rem(26);
+		padding: rem(5) rem(20);
+		font-size: rem(16);
+		line-height: math.div(16, 16);
+		color: $gray_13;
+		white-space: nowrap;
+		transition: color 0.3s ease 0s;
+
+		@media (max-width: $tablet2) {
+			height: rem(36);
+		}
+
+		&::after {
+			flex-basis: rem(7);
+			background-image: url(../img/icons/icon_down.svg);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: contain;
+		}
+	}
+
+	.select__options {
+		border: none;
+		border-radius: rem(8);
+		padding-bottom: rem(10);
+		background-color: $gray_14;
+	}
+
+	.select__option {
+		display: flex;
+		align-items: center;
+		min-height: rem(26);
+		padding: rem(5) rem(20);
+		font-size: rem(16);
+		line-height: math.div(16, 16);
+		color: $gray_13;
+		transition: color 0.3s ease 0s;
+
+		@media (max-width: $tablet2) {
+			min-height: rem(36);
+		}
+
+		&:hover {
+			background-color: $gray_14;
+			color: $white;
+		}
 	}
 }

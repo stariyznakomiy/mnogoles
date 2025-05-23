@@ -44,10 +44,16 @@ $gray_9: #a2a2a2;
 $gray_10: #4f4f4f;
 $gray_11: #cbcbcb;
 $gray_12: #888;
+$gray_13: #b7b7b7;
+$gray_14: #454545;
+$gray_15: #b0b0b0;
+$blue: #419fd9;
 $accent: #68b222;
 $accent_light: #b7fd75;
+$accent_light_2: #82b900;
 $accent_gradient: linear-gradient(45deg, #68b222 0%, #95e747 100%);
 $accent_gradient_2: radial-gradient(70.71% 70.71% at 50% 50%, rgb(149, 231, 71) 0%, rgb(104, 178, 34) 100%);
+$error_gradient: radial-gradient(70.71% 70.71% at 50% 50%, rgb(231, 71, 71) 0%, rgb(178, 34, 34) 100%);
 $white: #fff;
 $black: #000;
 // Настройки адаптивной сетки ===============================================================================================================================================================================================================================================================================================
@@ -180,4 +186,10 @@ body {
 @import 'modules/callback';
 @import 'modules/about';
 @import 'modules/principles';
+@import 'modules/map';
 @import 'modules/team';
+@import 'modules/delpay';
+@import 'modules/lumber-calc';
+@import 'modules/catalog';
+@import 'modules/card';
+@import 'modules/basket';

@@ -112,12 +112,3 @@ img {
     color: $gray_12;
   }
 }
-
-.map {
-  width: 100%;
-  height: rem(361);
-
-  @media (max-width: $mobileSmall) {
-    height: rem(263);
-  }
-}

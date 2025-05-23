@@ -368,9 +368,6 @@
 //========================================================================================================================================================
 
 .menu {
-  @media (min-width: $tablet2) {
-    display: none;
-  }
   position: fixed;
   z-index: 100;
   top: 0;
@@ -382,6 +379,10 @@
   flex-direction: column;
   background-color: $bg_dark;
   transition: translate 0.3s ease 0s;
+
+  @media (min-width: $tablet2) {
+    display: none;
+  }
 
   .menu-open & {
     translate: 0;
@@ -518,7 +519,7 @@
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
+    overflow-y: auto;
     overscroll-behavior: none;
   }
   // .menu__list-wrapper

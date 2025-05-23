@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Доска обрезная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+            <!-- catalog -->
+            <section class="catalog">
+                <div class="catalog__container">
+                    <div class="catalog__breadcrumbs breadcrumbs">
+                        <a href="#" class="breadcrumbs__back">←</a>
+                        <div class="breadcrumbs__list">
+                            <a href="/" class="breadcrumbs__link">Главная</a>
+                            <span>/</span>
+                            <a href="/" class="breadcrumbs__link">Каталог товаров</a>
+                            <span>/</span>
+                            <span class="breadcrumbs__key">Обрезная доска</span>
+                        </div>
+                    </div>
+                    <div class="catalog__grid">
+                        <div class="catalog__sidebar sidebar" data-js="sidebar">
+                            <div class="sidebar__close-wrapper">
+                                <button type="button" class="sidebar__close" data-js="sidebar-close"></button>
+                            </div>
+                            @@include('html/_sidebar__list-wrapper_catalog.html',{})
+                            @@include('html/_sidebar__list-wrapper_filters.html',{})
+                        </div>
+                        <div class="catalog__main">
+                            <div class="catalog__group">
+                                <h1 class="catalog__title h1">Доска обрезная</h1>
+                                <div class="catalog__actions">
+                                    <button type="button" class="catalog__actions-btn catalog__actions-btn_catalog" data-js="sidebar-catalog">Каталог</button>
+                                    <button type="button" class="catalog__actions-btn catalog__actions-btn_filters" data-js="sidebar-filters">Фильтр</button>
+                                </div>
+                                <div class="catalog__list">
+                                    @@include('html/_product-card.htm',{"class":"catalog__list-item catalog__list-item_product", "id":"1", "label":"В наличии"})
+                                    @@include('html/_product-card.htm',{"class":"catalog__list-item catalog__list-item_product", "id":"2", "label":"В наличии"})
+                                    @@include('html/_product-card.htm',{"class":"catalog__list-item catalog__list-item_product product-card_disable", "id":"3", "label":"Нет вналичии"})
+                                    @@include('html/_product-card.htm',{"class":"catalog__list-item catalog__list-item_product", "id":"4", "label":"В наличии"})
+                                    @@include('html/_product-card.htm',{"class":"catalog__list-item catalog__list-item_product", "id":"5", "label":"В наличии"})
+                                    @@include('html/_product-card.htm',{"class":"catalog__list-item catalog__list-item_product product-card_disable", "id":"6", "label":"Нет в наличии"})
+                                </div>
+                                <button type="button" class="catalog__more-btn btn btn_small">Загрузить еще <span>↓</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- catalog end -->
+
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>
