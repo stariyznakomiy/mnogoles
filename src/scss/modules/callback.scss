@@ -81,6 +81,26 @@
       letter-spacing: 0.05em;
     }
   }
+
+  // .callback_dark
+  &_dark {
+    background-color: $bg_dark_8;
+
+    @media (max-width: $tablet2) {
+      padding-top: rem(40);
+      padding-bottom: rem(40);
+      background-color: transparent;
+    }
+
+    @media (max-width: $mobile) {
+      padding-top: rem(32);
+      padding-bottom: rem(111);
+    }
+
+    @media (max-width: $mobileSmall) {
+      padding-bottom: rem(61);
+    }
+  }
   // .callback__container
   &__container {
   }
